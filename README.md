@@ -1,5 +1,7 @@
 # tunnelify
 
+![](https://img.shields.io/badge/no-bugs-brightgreen.svg)
+
 Spawns whatever `ssh` client/command is available on your system and opens a tunnel to (from?) a remote host and port(s).
 
 ## Why?
