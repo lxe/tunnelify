@@ -1,6 +1,6 @@
 {
   "name": "tunnelify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create an ssh tunnel to a remote host and port(s). Uses locally available 'ssh' via exec().",
   "main": "tunnelify",
   "scripts": {
