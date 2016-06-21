@@ -63,7 +63,7 @@ var Tunnel = require('tunnelify');
 
 const tunnel = Tunnel({
   host: 'work-machine',
-  ports: {
+  tunnels: {
     // Make localhost:389 tunnel to an ldap server only accessible from work-machine:
     // [local-machine:389] -> [work-machine] -> [ldap.server:389]
     389: 'ldap.server:389',
