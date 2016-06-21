@@ -27,13 +27,13 @@ And in your code:
 var Tunnel = require('tunnelify');
 
 // Same as doing this:
-// ssh -NL 9000:localhost:80 work-machine
+// ssh -NL 80:localhost:80 work-machine
 
 const tunnel = Tunnel({
   host: 'work-machine',
 
-  // Make localhost:9000 tunnel to work-machine's port 80
-  // [local-machine:389] -> [work-machine:80]
+  // Make localhost:80 tunnel to work-machine's port 80
+  // [local-machine:80] -> [work-machine:80]
   port: 80
 }, (err) => {
   if (err) throw err;
@@ -69,7 +69,7 @@ const tunnel = Tunnel({
     389: 'ldap.server:389',
 
     // Make localhost:9000 tunnel to work-machine's port 80
-    // [local-machine:389] -> [work-machine:80]
+    // [local-machine:9000] -> [work-machine:80]
     9000: 'localhost:80'
   }
 }, (err) => {
